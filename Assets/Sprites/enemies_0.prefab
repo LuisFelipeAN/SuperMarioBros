@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61183318810399774}
   - component: {fileID: 50763067996803056}
   - component: {fileID: 114422463618218996}
+  - component: {fileID: 95200062717453784}
   m_Layer: 0
   m_Name: enemies_0
   m_TagString: Untagged
@@ -88,6 +89,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!95 &95200062717453784
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1754429809066108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ea1cda4666cd68498eb7fbb8c10316f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114422463618218996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,6 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6455d4e8a2b784e43b28962187db6138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadeX: -0.5
+  raio: 2
 --- !u!212 &212986295434989720
 SpriteRenderer:
   m_ObjectHideFlags: 1

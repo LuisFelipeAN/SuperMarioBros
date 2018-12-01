@@ -61,12 +61,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ScriptiEnemy.cs" />
-    <Compile Include="Assets\ScriptMario.cs" />
+    <Compile Include="Assets\DesceBandeira.cs" />
+    <Compile Include="Assets\ScriptDesceBandeira.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\TurnLeftToRightController.cs" />
-    <Compile Include="Assets\TurnRightController.cs" />
-    <Compile Include="Assets\TurnRightToLeft.cs" />
+    <Compile Include="Assets\Scripts\EnemyDie.cs" />
+    <Compile Include="Assets\Scripts\ScriptiEnemy.cs" />
+    <Compile Include="Assets\Scripts\ScriptMario.cs" />
+    <Compile Include="Assets\Scripts\TerminouDescerBandeira.cs" />
+    <Compile Include="Assets\Scripts\TurnLeftToRightController.cs" />
+    <Compile Include="Assets\Scripts\TurnRightToLeft.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Principal/Documents/10° Período/Desenvolvimento de jogos/github/SuperMarioBros/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
