@@ -30,6 +30,7 @@ public class CameraController : MonoBehaviour {
 		backgroundController = GameObject.FindGameObjectWithTag ("Background").GetComponent<MeshRenderer> ();
 
         leftBorderCam = new Vector3(0, 0, 0);
+        playerScript.minX = Camera.main.ScreenToWorldPoint(leftBorderCam).x;
     }
 	
 	// Update is called once per frame
