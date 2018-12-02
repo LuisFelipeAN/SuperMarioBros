@@ -17,6 +17,7 @@ public class EnemyDie : StateMachineBehaviour{
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        //Destroi o inimigo depois da animacao terminar
         Transform e = animator.GetComponentInParent<Transform>();
         Destroy(e.gameObject);
     }

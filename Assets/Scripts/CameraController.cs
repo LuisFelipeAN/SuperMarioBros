@@ -36,11 +36,11 @@ public class CameraController : MonoBehaviour {
 		Vector3 screenPos = Camera.main.WorldToScreenPoint (player.transform.position);
         Vector3 dx = Vector3.right *  Time.deltaTime;
 
-        //movimenta a camera e o backgroud somente se o jogador pasar a metade da tela
+        //movimenta a camera e o backgroud somente se o jogador passar a metade da tela
         if (screenPos.x >= Screen.width /2)
         {
             Camera.main.transform.position += dx * playerScript.GetVelocidadeHorizontal;
-            if (playerScript.GetVelocidadeHorizontal > 0)
+            if (playerScript.GetVelocidadeHorizontal > 0)//garante que so ira mexer se o jogador estiver se deslocando para a direita
             {
                 Renderer backRenderer = backgroundController as Renderer;
                 backRenderer.material.mainTextureOffset += new Vector2(dx.x * backgroundSpeed, 0);

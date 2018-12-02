@@ -7,6 +7,7 @@ public class TerminouDescerBandeira : StateMachineBehaviour
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+        //se terminou de descer a bandeira coloca o cara do outro lado
         Transform p = animator.GetComponentInParent<Transform>();
         p.position = new Vector2(57.538f, -0.803f);
     }
@@ -19,7 +20,7 @@ public class TerminouDescerBandeira : StateMachineBehaviour
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.SetBool("WalkToTheCastle", true);
+        animator.SetBool("WalkToTheCastle", true);//manda ele andar ate o castelo
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here

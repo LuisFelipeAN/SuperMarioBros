@@ -16,6 +16,7 @@ public class TurnLeftToRightController : StateMachineBehaviour {
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+        //todo este estado e usado para caso o jogador pressione as duas teclas simultaneamente nesse caso a tecla direita apos a esquerda
         animator.SetBool("WalkingLeft", false);
 
     }
