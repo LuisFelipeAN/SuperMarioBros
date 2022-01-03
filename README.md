@@ -1,2 +1,2 @@
 # SuperMarioBros
-## A Prototype of 2D SuperMarioBros Game Developed Using Unit
+## A Prototype of 2D SuperMarioBros Game
